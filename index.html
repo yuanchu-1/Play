@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>立冬暖心礼物</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div id="snow-layer" aria-hidden="true"><canvas id="snowCanvas"></canvas></div>
+    <div class="modal-backdrop" id="start-backdrop" aria-hidden="false">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="titlebar">
+          <span class="icon">❄️</span>
+          <span class="title" id="modal-title">立冬礼物</span>
+        </div>
+        <div class="content">立冬至，愿你被温柔与温暖拥抱。要打开吗？</div>
+        <div class="actions">
+          <button class="btn primary" id="confirm-btn" autofocus>确定</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-layer" aria-live="polite" aria-atomic="false"></div>
+    <div class="season-tag" aria-hidden="true">立冬</div>
+    <div class="corner-balls" aria-hidden="true">
+      <div class="ball ball-a"></div>
+      <div class="ball ball-b"></div>
+    </div>
+    <div id="controls">
+      <button class="btn control" id="replay-btn" title="重播">再来一次</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" preload="auto">
+    <source src="https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7569557069053856549.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+</html>

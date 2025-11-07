@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>分享页 · 立冬暖心礼物</title>
+    <meta name="description" content="雪花与心形弹框的暖心互动礼物，送给特别的TA。" />
+    <meta property="og:title" content="立冬暖心礼物" />
+    <meta property="og:description" content="雪花与心形弹框的暖心互动礼物，送给特别的TA。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="site/share.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">暖心小站</div>
+      <button class="menu-toggle" aria-label="切换导航">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="gift.html">礼物互动</a>
+        <a href="share.html" class="active">分享页</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>把礼物分享给 TA</h1>
+        <p>复制链接发送给朋友，或下载“分享图”发送到社交平台。</p>
+        <div class="cta">
+          <a class="btn primary" href="gift.html">立即打开礼物</a>
+        </div>
+      </section>
+
+      <section class="share-tools">
+        <div class="tool-row">
+          <button id="copy-gift" class="btn">复制礼物链接</button>
+          <button id="copy-page" class="btn">复制本页链接</button>
+          <button id="download-card" class="btn">下载分享图</button>
+        </div>
+        <canvas id="cardCanvas" class="card-canvas" width="960" height="540" aria-label="分享图预览"></canvas>
+        <p class="hint">注：在本机预览为 <code>localhost</code> 地址，若要给别人访问，请部署到可访问的地址（如 GitHub Pages）或使用内网 IP。</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 暖心小站 · 立冬</span>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="share.js"></script>
+  </body>
+  </html>
